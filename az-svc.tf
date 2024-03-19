@@ -135,7 +135,7 @@ resource "azurerm_container_registry" "az-lms-tf-acr" {
 
 # Assign Role For ACR
 resource "azurerm_role_assignment" "az-tf-acr-access" {
-  principal_id         = "e8458030-94d8-49c9-85e6-a5eb9544ee9c" # User's Object ID
+  principal_id         = "02393b34-c199-40c4-83c1-8d929b69f1ce" # User's Object ID
   role_definition_name = "Owner"
   scope                = azurerm_container_registry.az-lms-tf-acr.id
 }
